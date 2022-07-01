@@ -29,7 +29,7 @@ public class Postagem {
 	private String texto;
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date date = new  java.sql.Date(System.currentTimeMillis());
+	private Date date = new  java.util.Date(System.currentTimeMillis());
 
 	public long getId() {
 		return id;
