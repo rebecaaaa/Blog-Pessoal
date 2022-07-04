@@ -49,7 +49,7 @@ public class PostagemController {
 			return ResponseEntity.status(HttpStatus.OK).body(repository.save(postagem));	
 		}
 		
-		@DeleteMapping
+		@DeleteMapping("/{id}")
 		public void delete (@PathVariable long id ){
 			repository.deleteById(id);
 		}
